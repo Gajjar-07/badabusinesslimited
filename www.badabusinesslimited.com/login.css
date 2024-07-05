@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+}
+.nav-logo{
+    height: 80px;
+    width: 100px;
+}
+.logo{
+    background-image: url('BBL LOGO.png');
+    background-size: cover;
+    height: 80px;
+    width: 100%;
+}.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav-links .dropdown {
+    position: relative;
+}
+
+.nav-links .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.nav-links .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-links .dropdown-content a:hover {
+    background-color: #555;
+}
+
+.nav-links .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+.border{
+    border: 2px solid transparent;
+}
+.border:hover{
+    border: 2px solid black;
+}
+.button {
+
+    display:inline-flex;
+    background-color: whitesmoke;
+    color:black;
+    padding: 10px ;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+/* login section*/
+.login-section {
+    padding: 60px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.login-section h1 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.login-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-section label {
+    margin: 10px 0 5px;
+    font-size: 1.2rem;
+}
+
+.login-section input {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.login-section button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-section button:hover {
+    background-color: #555;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+@media screen and (max-width: 768px){
+
+
+ 
+        .nav-links {
+            display: none;
+            width: 100%;
+            flex-direction: column;
+        }
+    
+        .nav-links li {
+            text-align: center;
+            margin: 10px 0;
+        }
+    
+        .nav-links.active {
+            display: flex;
+        }
+    
+        .menu-toggle {
+            display: flex;
+        }
+       
+    }
+
+
